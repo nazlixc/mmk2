@@ -1,3 +1,30 @@
+:root {
+    --main-text-color: #6200EE;
+    --main-background-color: #C0ACD9;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    border: solid;
+}
+
+.control-steps {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+
+.left-side, .right-side {
+    display: flex;
+}
 
 /*SWITCH*/
 /* The switch - the box around the slider */
@@ -31,29 +58,28 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 27px;
-    width: 27px;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    height: 28px;
+    width: 28px;
+    left: -1.5px;
+    top: -1.5px;
     background-color: black;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked + .slider {
-    background-color: #C0ACD9;
+    background-color: var(--main-background-color);
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #C0ACD9;
+    box-shadow: 0 0 1px var(--main-background-color);
 }
 
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-    background-color: #6200EE;
+    background-color: var(--main-text-color);
 }
 
 /* Rounded sliders */
