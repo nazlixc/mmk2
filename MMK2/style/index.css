@@ -9,6 +9,10 @@
     flex-direction: column;
 }
 
+.left-side, .right-side {
+    display: flex;
+}
+
 .control-content {
     display: flex;
     flex-direction: row;
@@ -19,10 +23,22 @@
     padding: 16px;
 }
 
+/*ICON*/
+.control-icon {
+    margin: auto;
+}
+
+.control-picture {
+    width: 32px;
+    height: auto;
+}
+
+/*PADDING*/
 .padding {
     padding: 8px;
 }
 
+/*STEP*/
 .step {
     display: flex;
     align-items: center;
@@ -34,15 +50,11 @@
     border-radius: var(--main-border-radius);
 }
 
-.left-side, .right-side {
-    display: flex;
-}
-
+/*SWITCH*/
 .control-switch {
     align-self: center;
 }
 
-/*SWITCH*/
 /* The switch - the box around the slider */
 .switch {
     position: relative;
