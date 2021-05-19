@@ -1,6 +1,7 @@
 :root {
     --main-text-color: #6200EE;
     --main-background-color: #C0ACD9;
+    --main-border-radius: 8px;
 }
 
 .content {
@@ -14,16 +15,31 @@
     align-items: center;
     justify-content: space-between;
     background-color: lightgray;
-    border: solid;
+    border: solid 0.5px dimgray;
+    padding: 16px;
 }
 
-.control-steps {
+.control-padding {
+    padding: 8px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--main-background-color);
     color: var(--main-text-color);
+    width: 32px;
+    height: 40px;
+    border-radius: var(--main-border-radius);
 }
 
 .left-side, .right-side {
     display: flex;
+}
+
+.control-switch {
+    align-self: center;
 }
 
 /*SWITCH*/
@@ -50,7 +66,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: dimgray;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -84,7 +100,7 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-    border-radius: 8px;
+    border-radius: var(--main-border-radius);
 }
 
 .slider.round:before {
