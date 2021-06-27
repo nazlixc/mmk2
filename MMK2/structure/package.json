@@ -1,0 +1,19 @@
+{
+  "name": "osc_js_sample",
+  "version": "1.0.0",
+  "description": "Sample for OSC connection tu Azure Kintetic Space",
+  "main": "script.js",
+  "scripts": {
+    "test": "none"
+  },
+  "dependencies": {
+    "osc-js": "^2.1.2",
+    "ws": "^7.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "Christian Felix Purps",
+  "license": "ISC"
+}
